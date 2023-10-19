@@ -11,6 +11,7 @@ CSS Styling - The quiz should be centered on the page, applying suitable margin 
 Functionality - When an answer option is clicked, the other options should be disabled (unclickable), a determination should be made as to whether the answer is correct or not, and feedback should be output to the appropriate element. All the JS should be written in jQuery!
 
 Step Two
+
 Add all of your code to a GitHub repository, and add the quiz app to your website’s project section. Include a screenshot, title, brief description, and a link to the repo.
 
 ---

@@ -1,0 +1,101 @@
+<!-- Project 12: Add to personal website
+    
+Overview
+--Step One--
+Create a simple quiz app, which presents the user with at least 1 multiple choice question and gives some kind of feedback to the user about whether their selected answer was correct or incorrect.
+Requirements:
+HTML Structure - The quiz should have a title, should provide 3 - 4 answer options, and should have an element to display feedback on the selected answer
+CSS Styling - The quiz should be centered on the page, applying suitable margin and padding for better readability and appearance. In addition, the answer options should employ some kind of hover effect (e.g. - changing color, etc.), and the feedback message should use distinct colors (one for a correct answer, another for an incorrect answer)
+Functionality - When an answer option is clicked, the other options should be disabled (unclickable), a determination should be made as to whether the answer is correct or not, and feedback should be output to the appropriate element. All the JS should be written in jQuery!
+--Step Two--
+Add all of your code to a GitHub repository, and add the quiz app to your website’s project section. Include a screenshot, title, brief description, and a link to the repo.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Back to the Future Quiz</title>
+</head>
+
+<body>
+
+
+    <div class="centered-container">
+
+
+        <video autoplay loop muted>
+            <source src=https://i.imgur.com/eoSwL97.mp4" type="video/mp4">
+            Your browser does not support the video.
+
+        </video>
+
+
+
+
+        <div class="overlay"></div>
+
+
+
+        <div id="start-container">
+            <div id="start-button">
+            </div>
+        </div>
+
+
+
+
+        <div id="quiz-container">
+            <div id="title">
+                <img src="https://i.ibb.co/MVsvFXG/title2.png" id="title-img" alt="Back to the future Quiz">
+            </div>
+            <div id="question-container">
+
+                <p id="question">The question will be here</p>
+                <ul id="options">
+                    <li class="option">Answer choice 1</li>
+                    <li class="option">Answer choice 2</li>
+                    <li class="option">Answer choice 3</li>
+                    <li class="option">Answer choice 4</li>
+                </ul>
+            </div>
+            <div id="feedback-container">
+                <p id="feedback">Let's get started!</p>
+            </div>
+            <div id="buttons-container">
+                <button id="next-btn" class="hidden">Next</button>
+                <button id="results-btn" class="hidden">Show results</button>
+                <button id="reset-btn" class="hidden">Start over</button>
+            </div>
+            <div id="question_number_div">
+                <p id="question_number">Question number 1 of 10</p>
+            </div>
+        </div>
+
+
+
+
+        <div id="bottom-right-container">
+            <div class="audio-container">
+                <img id="audio-toggle" src="https://i.ibb.co/6sbKr0z/no-sound-toggle-80.png" alt="Toggle Sound">
+                <img id="audio-toggle-muted" src="https://i.ibb.co/MB0zZxb/sound-toggle-80.png"
+                    alt="Toggle Sound Muted">
+                <audio id="audio" loop>
+                    <source src="https://raw.githubusercontent.com/AndrewAxen/Project12-ASimpleQuizApp/main/Produce.mp3"
+                        type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
